@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_ipdata">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		
+		<action name="countries.access" title="Country Access" description="Can access the Countries" />
+		<action name="countries.edit" title="Country Edit" description="Can edit countries" />
+		<action name="countries.create" title="Country Create" description="Can create countries" />
+		<action name="countries.delete" title="Country Delete" description="Can delete countries" />
+		<action name="countries.edit.state" title="Country State" description="Can edit countries state" />
+		
+		<action name="currencies.access" title="Currency Access" description="Can access the Countries" />
+		<action name="currencies.edit" title="Currency Edit" description="Can edit currencies" />
+		<action name="currencies.create" title="Currency Create" description="Can create currencies" />
+		<action name="currencies.delete" title="Currency Delete" description="Can delete currencies" />
+		<action name="currencies.edit.state" title="Currency State" description="Can edit currencies state" />
+	</section>
+	<section name="country">
+        <!-- Actions to be used in for country -->
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+	</section> 
+	<section name="currency">
+        <!-- Actions to be used in for currency -->
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+	</section> 
+</access>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		addfieldpath="/administrator/components/com_ipdata/models/fields"
+		name="component"
+		label="COM_IPDATA_CONFIG_COMPONENT_FIELDSET_LABEL"
+		description="COM_IPDATA_CONFIG_COMPONENT_FIELDSET_DESC">
+
+		<field
+			name="base_currency"
+			type="currency"
+			label="COM_IPDATA_CONFIG_BASE_CURRENCY_LABEL"
+			description="COM_IPDATA_CONFIG_BASE_CURRENCY_DESC"
+		/>
+		<field
+			name="vdm_logo"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_IPDATA_CONFIG_PROJECT_VDM_LOGO_LABEL"
+			description="COM_IPDATA_CONFIG_PROJECT_VDM_LOGO_DESC">
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+		</field>
+		<field
+			name="vdm_text"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_IPDATA_CONFIG_PROJECT_VDM_TEXT_LABEL"
+			description="COM_IPDATA_CONFIG_PROJECT_VDM_TEXT_DESC">
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+		</field>
+		<field
+			name="vdm_link"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_IPDATA_CONFIG_PROJECT_VDM_FRONT_LABEL"
+			description="COM_IPDATA_CONFIG_PROJECT_VDM_FRONT_DESC">
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+		</field>
+				
+		<field type="spacer" name="globalspacer" hr="true" />
+		
+		<field name="globalspacer_title"
+			type="spacer"
+			label="COM_IPDATA_CONFIG_CONTACT"
+		/>
+		
+		<field name="nameGlobal"
+			type="text"
+			label="COM_IPDATA_CONFIG_GLOBAL_NAME_LABEL"
+			description="COM_IPDATA_CONFIG_GLOBAL_NAME_DESC"
+			size="60"
+			default="Vast Development Method"
+			readonly="true"
+			class="readonly"
+		/>
+		<field name="emailGlobal"
+			type="email"
+			label="COM_IPDATA_CONFIG_GLOBAL_EMAIL_LABEL"
+			description="COM_IPDATA_CONFIG_GLOBAL_EMAIL_DESC"
+			size="60"
+			default="info@vdm.io"
+			readonly="true"
+			class="readonly"
+		/>
+		
+		<field type="spacer" name="globalspacer0" hr="true" />
+		
+		<field name="globalspacer1"
+			type="spacer"
+			label="COM_IPDATA_CONFIG_WORKER"
+		/>
+		
+		<field name="worker1"
+			type="spacer"
+			class="text"
+			label="COM_IPDATA_CONFIG_WORKER_ONE"
+		/>
+		<field name="titleWorker1"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_TITLE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_TITLE_DESC"
+			size="60"
+			default="Application Engineer"
+		/>
+		<field name="nameWorker1"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_NAME_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_NAME_DESC"
+			size="60"
+			default="Llewellyn van der Merwe"
+		/>
+		<field name="emailWorker1"
+			type="email"
+			label="COM_IPDATA_CONFIG_WORKER_EMAIL_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_EMAIL_DESC"
+			size="60"
+			default="llewellyn@vdm.io"
+		/>
+		<field name="linkWorker1"
+			type="url"
+			label="COM_IPDATA_CONFIG_WORKER_LINK_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_LINK_DESC"
+			size="60"
+			default="http://vdm.io"
+		/>
+		<field name="useWorker1"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_USE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_USE_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_USE_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_USE_EMAIL</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_USE_WWW</option>
+		</field>
+		<field name="showWorker1"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_SHOW_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_SHOW_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_SHOW_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_SHOW_BACK</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_SHOW_FRONT</option>
+			<option value="3">COM_IPDATA_CONFIG_WORKER_SHOW_ALL</option>
+		</field>
+		<field type="spacer" name="globalspacer2" hr="true" />
+		
+		<field name="worker2"
+			type="spacer"
+			class="text"
+			label="COM_IPDATA_CONFIG_WORKER_TWO"
+		/>
+		<field name="titleWorker2"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_TITLE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_TITLE_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="nameWorker2"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_NAME_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_NAME_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="emailWorker2"
+			type="email"
+			label="COM_IPDATA_CONFIG_WORKER_EMAIL_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_EMAIL_DESC"
+			size="60"
+			default=""
+		/>		
+		<field name="linkWorker2"
+			type="url"
+			label="COM_IPDATA_CONFIG_WORKER_LINK_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_LINK_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="useWorker2"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_USE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_USE_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_USE_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_USE_EMAIL</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_USE_WWW</option>
+		</field>
+		<field name="showWorker2"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_SHOW_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_SHOW_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_SHOW_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_SHOW_BACK</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_SHOW_FRONT</option>
+			<option value="3">COM_IPDATA_CONFIG_WORKER_SHOW_ALL</option>
+		</field>
+		<field type="spacer" name="globalspacer3" hr="true" />
+		
+		<field name="worker3"
+			type="spacer"
+			class="text"
+			label="COM_IPDATA_CONFIG_WORKER_THREE"
+		/>
+		<field name="titleWorker3"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_TITLE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_TITLE_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="nameWorker3"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_NAME_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_NAME_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="emailWorker3"
+			type="email"
+			label="COM_IPDATA_CONFIG_WORKER_EMAIL_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_EMAIL_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="linkWorker3"
+			type="url"
+			label="COM_IPDATA_CONFIG_WORKER_LINK_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_LINK_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="useWorker3"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_USE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_USE_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_USE_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_USE_EMAIL</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_USE_WWW</option>
+		</field>
+		<field name="showWorker3"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_SHOW_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_SHOW_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_SHOW_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_SHOW_BACK</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_SHOW_FRONT</option>
+			<option value="3">COM_IPDATA_CONFIG_WORKER_SHOW_ALL</option>
+		</field>
+
+		<field type="spacer" name="globalspacer4" hr="true" />
+		
+		<field name="worker4"
+			type="spacer"
+			class="text"
+			label="COM_IPDATA_CONFIG_WORKER_FOUR"
+		/>
+		<field name="titleWorker4"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_TITLE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_TITLE_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="nameWorker4"
+			type="text"
+			label="COM_IPDATA_CONFIG_WORKER_NAME_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_NAME_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="emailWorker4"
+			type="email"
+			label="COM_IPDATA_CONFIG_WORKER_EMAIL_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_EMAIL_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="linkWorker4"
+			type="url"
+			label="COM_IPDATA_CONFIG_WORKER_LINK_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_LINK_DESC"
+			size="60"
+			default=""
+		/>
+		<field name="useWorker4"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_USE_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_USE_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_USE_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_USE_EMAIL</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_USE_WWW</option>
+		</field>
+		<field name="showWorker4"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_WORKER_SHOW_LABEL"
+			description="COM_IPDATA_CONFIG_WORKER_SHOW_DESC">
+			<option value="0">COM_IPDATA_CONFIG_WORKER_SHOW_NONE</option>
+  			<option value="1">COM_IPDATA_CONFIG_WORKER_SHOW_BACK</option>
+  			<option value="2">COM_IPDATA_CONFIG_WORKER_SHOW_FRONT</option>
+			<option value="3">COM_IPDATA_CONFIG_WORKER_SHOW_ALL</option>
+		</field>
+		<field
+			name="vdm_name"
+			type="hidden"
+			default="Vast Development Method"
+			size="50"
+			readonly="true"
+			class="readonly">
+		</field>
+		<field
+			name="vdm_url"
+			type="hidden"
+			default="https://www.vdm.io/"
+			size="50"
+			readonly="true"
+			class="readonly">
+		</field>
+		<field
+			name="vdm_owner"
+			type="hidden"
+			default="Llewellyn van der Merwe"
+			size="50"
+			readonly="true"
+			class="readonly">
+		</field>
+	</fieldset>
+	<fieldset
+		addfieldpath="/administrator/components/com_ipdata/models/fields"
+		name="api"
+		label="COM_IPDATA_CONFIG_API_FIELDSET_LABEL"
+		description="COM_IPDATA_CONFIG_API_FIELDSET_DESC">
+		
+		<field
+			name="api_access"
+			type="list"
+			default="0"
+			label="COM_IPDATA_CONFIG_API_ACCESS_LABEL"
+			description="COM_IPDATA_CONFIG_API_ACCESS_DESC">
+			<option
+				value="1">COM_IPDATA_CONFIG_PRIVATE</option>
+			<option
+				value="2">COM_IPDATA_CONFIG_ALL_USERS</option>
+			<option
+				value="3">COM_IPDATA_CONFIG_ALL_USERS_IN_GROUP</option>
+			<option
+				value="4">COM_IPDATA_CONFIG_ALL_USERS_IN_ACCESSLEVEL</option>
+			<option
+				value="5">COM_IPDATA_CONFIG_ONLY_SELECTED_USERS</option>
+			<option
+				value="0">COM_IPDATA_CONFIG_PUBLIC</option>
+		</field>
+		
+		<field name="api_privatekey"
+			type="text"
+			label="COM_IPDATA_CONFIG_JSON_API_KEY_LABEL"
+			description="COM_IPDATA_CONFIG_JSON_API_KEY_DESC"
+			size="60"
+			default=""
+		/>
+		
+		<field name="api_note"
+			type="note" 
+			label="COM_IPDATA_CONFIG_API_NOTE_LABEL" 
+			description="COM_IPDATA_CONFIG_API_NOTE_DESC"
+		/>
+		
+		<field name="api_accessgroup" 
+			type="usergroup"
+			label="COM_IPDATA_CONFIG_ACCESSGROUP_LABEL"
+			description="COM_IPDATA_CONFIG_ACCESSGROUP_DESC" 
+			multiple="true"
+		/>
+		
+		<field name="api_accesslevel" 
+			type="accesslevel"
+			label="COM_IPDATA_CONFIG_ACCESSLEVEL_LABEL"
+			description="COM_IPDATA_CONFIG_ACCESSLEVEL_DESC" 
+			multiple="true"
+		/>
+		
+		<field name="api_accessuser" 
+			type="username"
+			label="COM_IPDATA_CONFIG_ACCESSUSERS_LABEL"
+			description="COM_IPDATA_CONFIG_ACCESSUSERS_DESC" 
+			multiple="true"
+		/>	
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_ipdata"
+			section="component" />
+	</fieldset>
+</config>

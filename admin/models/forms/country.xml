@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_ipdata/models/rules"
+	addfieldpath="/administrator/components/com_ipdata/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			class="inputbox validate-worldzone"
+			default=""
+			description=""
+			label="Worldzone"
+			name="worldzone"
+			required="true"
+			size="40"
+			type="numbers"
+			validate="worldzone"
+		/>
+		<field
+			class="inputbox validate-name"
+			default=""
+			description=""
+			label="Name"
+			name="name"
+			required="true"
+			size="40"
+			type="text"
+			validate="name"
+		/>
+		<field
+			class="inputbox validate-codethree"
+			default=""
+			description=""
+			label="Code Three"
+			name="codethree"
+			required="true"
+			size="40"
+			type="text"
+			validate="codethree"
+		/>
+		<field
+			default=""
+			description=""
+			label="Code Two"
+			name="codetwo"
+			required="true"
+			size="40"
+			type="text"
+			validate="codetwo"
+		/>
+		<field
+			default=""
+			description=""
+			label="Currency"
+			name="currency"
+			size="40"
+			type="currency"
+		/>
+		<field
+			class="inputbox validate-ordering"
+			default=""
+			description=""
+			label="Ordering"
+			name="ordering"
+			required="true"
+			size="40"
+			type="numbers"
+			validate="ordering"
+		/>
+		 <field name="published" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
+			filter="intval" size="1" default="1">
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+			<option value="2">
+				JARCHIVED</option>
+			<option value="-2">
+				JTRASHED</option>
+		</field>
+		<field 
+			name="asset_id" 
+			type="hidden" 
+			filter="unset" 
+		/>
+		<field
+			name="rules"
+			type="rules"
+			label="Field Access Rule"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			component="com_ipdata"
+			section="country"
+		/>
+	</fieldset>
+</form>

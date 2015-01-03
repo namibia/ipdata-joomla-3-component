@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>Ip Data</name>
+	<author>Llewellyn van der Merwe</author>
+	<creationDate>December 2014</creationDate>
+	<copyright>(C) 2014 Vast Development Method. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>llewellyn@vdm.io</authorEmail>
+	<authorUrl>www.vdm.io</authorUrl>
+	<version>1.0.1</version>
+	<description>The Ip Data API for Joomla</description>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_ipdata.ini</language>
+	</languages>
+	
+	<scriptfile>file.script.php</scriptfile>
+
+	<media destination="com_ipdata" folder="media">
+		<folder>images</folder>
+	</media>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>ipdata.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<folder>helpers</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<administration>
+		<menu view="ipdata" alt="COM_IPDATA">COM_IPDATA</menu>
+		<submenu>
+			<!-- Instead of link you can specify individual link attributes -->
+			<menu link="option=com_ipdata&amp;tab=1">COM_IPDATA_API_DOC</menu>
+			<menu link="option=com_ipdata&amp;tab=2">COM_IPDATA_IP_UPDATER</menu>
+			<menu link="option=com_ipdata&amp;tab=3">COM_IPDATA_EXCHANGERATE_UPDATER</menu>
+			<menu option="com_ipdata" view="countries">COM_IPDATA_COUNTRIES</menu>
+			<menu option="com_ipdata" view="currencies">COM_IPDATA_CURRENCIES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<filename>ipdata.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+		</files>
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_ipdata.sys.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_ipdata.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="extension" enabled="1" element="com_ipdata" name="Ip Data API">https://www.vdm.io/updates/joomla_three.xml</server>
+	</updateservers>
+</extension>
