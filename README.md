@@ -23,6 +23,12 @@ Learn IP Data API!
 * Read [Getting Started with IP Date](http://www.vdm.io/access/knowledgebase/39/IP-Data) to find out the basics
 * Using the API, read the [developers guide](http://www.vdm.io/access/knowledgebase/39/IP-Data)
 
+Where do we get IP and Exchange Rate Updates?
+---------------------
+* The database used to updated IP tables is provided by [software77.net](http://software77.net/geo-ip/) as [donationware](http://software77.net/geo-ip/?license) They need your support! Please make a [donation via paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3HKM8N5XXUHV6) now!
+* [Yahoo finance](http://finance.yahoo.com/currency-converter/) is used to update the exchange rates.
+* Both these updates can be automated via an **extra** [plugin](https://www.vdm.io/joomla/item/ip-data-update-cron).
+
 Want Automated IP and Exchange Rate Updates?
 ---------------------
 * A [plugin](https://www.vdm.io/joomla/item/ip-data-update-cron) has been built to provide **IP Data** with automated IP table and exchange rate updates, for more info [click here](https://www.vdm.io/joomla/item/ip-data-update-cron)
