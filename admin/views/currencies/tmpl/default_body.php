@@ -11,6 +11,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 $edit = "index.php?option=com_ipdata&view=currencies&task=currency.edit";
+JHtml::_('behavior.tooltip');
 
 ?>
 <?php foreach($this->items as $i => $item){
@@ -43,6 +44,21 @@ $edit = "index.php?option=com_ipdata&view=currencies&task=currency.edit";
             <?php else: ?>
                 <?php echo GetHelper::htmlEscape($item->name); ?>
             <?php endif; ?>
+		</td>
+		<td class="nowrap hidden-phone">
+            <?php
+				$exchangeRate	= false;	
+				$exchange		= GetHelper::getExchangeRate($item->codethree,1,2);
+				if(is_array($exchange['TO'])){
+					$to = current($exchange['TO']);
+					if($to['EXCHANGE_RATE']){
+					$exchangeRate = $to['EXCHANGE_RATE'];
+					}
+				}
+				if($exchangeRate){
+					echo '<span style="cursor: pointer; color: #08c;">'.JHtml::tooltip($exchangeRate, 'Unrounded Rate', '', GetHelper::htmlEscape(GetHelper::makeMoney($exchangeRate))).'</span> = '.GetHelper::htmlEscape(GetHelper::makeMoney(1,$item->codethree));
+				}
+			?>
 		</td>
 		<td class="nowrap center hidden-phone">
 			<?php echo $item->codethree; ?>

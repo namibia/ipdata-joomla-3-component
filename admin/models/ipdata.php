@@ -153,7 +153,7 @@ They need your support! Please make a <a href="https://www.paypal.com/cgi-bin/we
 		
 		// set the exchange rate update tab
 		$div_rateUpdate = '<div class="span12">';
-		$div_rateUpdate .= '<a class="btn btn-small" href="'.JURI::base().'index.php?option=com_ipdata&amp;task=update.rates&amp;key='.JSession::getFormToken().'" onclick="pleaseWait()">Update Exchange Rates Now</a><br /><small><em>This will take long! Do not close the browser window. This can take up to <b>25 minutes</b>, make sure your <b>(Session Lifetime)</b> is set to be longer then 25 minutes.</em></small>';
+		$div_rateUpdate .= '<a class="btn btn-small" href="'.JURI::base().'index.php?option=com_ipdata&amp;task=update.rates&amp;key='.JSession::getFormToken().'" onclick="pleaseWait()">Update Exchange Rates Now</a><br /><small><em>This will take long! Do not close the browser window. This can take up to <b>25 minutes</b>.</small>';
 		$div_rateUpdate .= '<h2 class="nav-header">Yahoo finance</h2><div class="well well-small">';
 		$div_rateUpdate .= '<p>Thanks to <a href="http://finance.yahoo.com/currency-converter/" target="_blank">Yahoo finance</a> we can update your DB with the latest exchange rates.</p>';
 		$div_rateUpdate .= '</div>';

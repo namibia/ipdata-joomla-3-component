@@ -46,7 +46,7 @@ class IpdataControllerUpdate extends JControllerLegacy
 						// get timer
 						$time = $this->pluginParams->get('iptimer', '-1 day');
 						if($this->setActiveState($time,'ipupdate') || $time == 0){
-							if($this->unActive(1,'ipupdate')){
+							if($this->unActive(1,'ipupdate') || $time == 0){
 								// Import dependencies
 								jimport('joomla.filesystem.file');
 								// set cron keeper to stop multiple execution
@@ -154,7 +154,7 @@ class IpdataControllerUpdate extends JControllerLegacy
 						$time = $this->pluginParams->get('ratetimer', '-1 day');
 						// set cron keeper to stop multiple execution
 						if($this->setActiveState($time,'rateupdate') || $time == 0){
-							if($this->unActive(1,'rateupdate')){
+							if($this->unActive(1,'rateupdate') || $time == 0){
 								if($this->unActive(8,'rateupdate')){
 									if($this->active(8,'rateupdate')){
 										if($this->upDateRates()){

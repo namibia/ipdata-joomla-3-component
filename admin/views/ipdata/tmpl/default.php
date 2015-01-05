@@ -11,6 +11,8 @@
 
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
+// keep loged-in
+JHtml::_('behavior.keepalive');
 
 ?>
 <div id="j-main-container" class="span12">

@@ -46,7 +46,7 @@ $baseCurrency	= GetHelper::makeMoney(1);
                 <?php echo GetHelper::htmlEscape($item->name); ?>
             <?php endif; ?>
 		</td>
-		<td class="nowrap hidden-phone">
+		<td class="nowrap hidden-phone" style="text-align: right;">
 			<?php
 				$exchangeRate	= false;	
 				$exchange		= GetHelper::getExchangeRate($item->currency);
@@ -56,11 +56,13 @@ $baseCurrency	= GetHelper::makeMoney(1);
 					$exchangeRate = $from['EXCHANGE_RATE'];
 					}
 				}
-				echo GetHelper::htmlEscape($item->currencyname);
 				if($exchangeRate){
-					echo ' <small><span style="background-color:#5396D7; color:#fff; padding: 3px;">'.$baseCurrency.' = '.GetHelper::makeMoney($exchangeRate,$item->currency).' </span></small>'; 
+					echo $baseCurrency.' = '.GetHelper::htmlEscape(GetHelper::makeMoney($exchangeRate,$item->currency)); 
 				}
 			?>
+		</td>
+		<td class="nowrap hidden-phone">
+			<?php echo GetHelper::htmlEscape($item->currencyname); ?>
 		</td>
 		<td class="nowrap center hidden-phone">
 			<?php echo $item->codethree; ?>

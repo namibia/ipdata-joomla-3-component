@@ -23,6 +23,9 @@ defined('_JEXEC') or die('Restricted access');
 	<th>
 		<?php echo JHtml::_('grid.sort', 'Name', 'name', $this->listDirn, $this->listOrder); ?>
 	</th>
+	<th class="nowrap hidden-phone" style="text-align: right;">
+		<?php echo JText::_('Exchange Rate'); ?>
+	</th>
 	<th class="nowrap hidden-phone">
 		<?php echo JHtml::_('grid.sort', 'Currency', 'currency', $this->listDirn, $this->listOrder); ?>
 	</th>
