@@ -21,7 +21,7 @@ Is IP Data! for you?
 Learn IP Data API!
 ---------------------
 * Read [Getting Started with IP Date](http://www.vdm.io/access/knowledgebase/39/IP-Data) to find out the basics
-* Using the API, read the [developers guide](http://www.vdm.io/access/knowledgebase/39/IP-Data)
+* Using the API, read the [developers guide](http://www.vdm.io/access/knowledgebase/225/The-IP-Data-API-Documentation.html)
 
 Where do we get IP and Exchange Rate Updates?
 ---------------------
