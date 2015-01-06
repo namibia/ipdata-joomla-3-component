@@ -79,6 +79,6 @@
 		</languages>
 	</administration>
 	<updateservers>
-		<server type="extension" enabled="1" element="com_ipdata" name="Ip Data API">https://www.vdm.io/updates/joomla_three.xml</server>
+		<server type="extension" enabled="1" element="com_ipdata" name="Ip Data API">https://www.vdm.io/updates/com_ipdata_three.xml</server>
 	</updateservers>
 </extension>

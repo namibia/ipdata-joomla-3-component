@@ -27,7 +27,7 @@ abstract class GetHelper
 		// check if data is in session
 		$session 		= JFactory::getSession();
 		// $session->clear('get_xml_settings'); // to debug the session
-		$currentVersion 	= $session->get('currentVersion', false);
+		$currentVersion 	= $session->get('IPData_currentVersion', false);
 		if($currentVersion !== false){
 			$currentVersion 	= json_decode(base64_decode($currentVersion));
 			// Parse the XML
@@ -37,7 +37,7 @@ abstract class GetHelper
 		} else {
 			// Parse the XML
 			$local 			= @simplexml_load_file(JPATH_ADMINISTRATOR."/components/com_ipdata/ipdata.xml");
-			$feed 			= @file_get_contents('https://www.vdm.io/updates/joomla_three.xml');
+			$feed 			= @file_get_contents('https://www.vdm.io/updates/com_ipdata_three.xml');
 			$updates 		= @simplexml_load_string($feed);
 			// load local version
 			self::$localVersion 	= (string)$local->version;
@@ -61,7 +61,7 @@ abstract class GetHelper
 			// if both are set, then continue
 			if(self::$currentVersion !== false && self::$localVersion !== false){
 				// add to session to speedup the page load.
-				$session->set('currentVersion', base64_encode(json_encode(self::$currentVersion)));
+				$session->set('IPData_currentVersion', base64_encode(json_encode(self::$currentVersion)));
 			}
 		}
 	}
